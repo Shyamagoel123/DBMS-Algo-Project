@@ -9,7 +9,7 @@ import sqlite3
 
 root=Tk()
 root.title('Product Table')
-root.geometry("400x600")
+root.geometry("500x700")
 #Background colour
 root['bg']='#FFFAF0'
 #Creating/Accesing a Database
@@ -65,7 +65,8 @@ def edit():
  #Create edit function to update
  editor=Tk()
  editor.title('Update a Record')
- editor.geometry("1600x1600")
+ editor.geometry("500x700")
+ editor['bg']='#FFFAF0'
     
  conn=sqlite3.connect('garment_retail.db')
  c=conn.cursor()
